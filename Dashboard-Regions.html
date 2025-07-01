@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard 3: Geographic Performance</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.1em;
+        }
+        /* Tableau specific styling adjustments */
+        .tableauPlaceholder {
+            width: 100%; /* Ensure it takes full width of its container */
+            height: 800px; /* Adjust height as needed for your dashboard */
+            margin: 0 auto; /* Center the embed */
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden; /* Hide any overflow */
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard 3: Geographic Performance & Profitability</h1>
+        <p>This dashboard pinpoints where the business is winning or losing geographically, and how profitability and discount usage vary by region.</p>
+
+        <!-- START OF TABLEAU EMBED CODE -->
+        <div class='tableauPlaceholder' id='viz1751392608446' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SQ&#47;SQLDashboards-Suggestions&#47;Dashboard3&#47;1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='SQLDashboards-Suggestions&#47;Dashboard3' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SQ&#47;SQLDashboards-Suggestions&#47;Dashboard3&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1751392608446');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            // Adjusting width and height for responsiveness within the container
+            // The original Tableau script often sets fixed sizes, overriding here for better fit
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width='100%'; // Use 100% width
+                vizElement.style.height='727px'; // Keep original height or adjust
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width='100%'; // Use 100% width
+                vizElement.style.height='727px'; // Keep original height or adjust
+            } else {
+                vizElement.style.width='100%'; // Use 100% width
+                vizElement.style.height='977px'; // Keep original height or adjust
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+        <!-- END OF TABLEAU EMBED CODE -->
+
+        <div class="nav-links">
+            <a href="index.html">Back to Portfolio Home</a>
+        </div>
+    </div>
+</body>
+</html>
